@@ -2,18 +2,18 @@ html
     head
         link(rel="stylesheet" href="/css/styles.css")
     body 
-        h1=showdata.title
-            h2=`Season ${season.number}`
-                table(style='width:100%', border=1)
-                        tr
-                            th No. 
-                            th Title 
-                            th Director 
-                        for episode in season.episodes
-                            tr
-                                td(class='episode-no')=episode.number 
-                                td=episode.title
-                                td=episode.director
-                            tr
-                                td(colspan=3)=episode.synopsis
+        h1(class='pagetitle')=showdata.title
+        h2(class='seasontitle')=`Season ${season.number}`
+        table
+            tr
+                th No. 
+                th Title 
+                th Director 
+            for episode in season.episodes
+                tr
+                    td(class='episode-no')=episode.number 
+                    td(class='titlelabel')=episode.title
+                    td=episode.director
+                tr
+                    td(colspan=3)=episode.synopsis
                         

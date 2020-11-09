@@ -1,17 +1,33 @@
+.pagetitle {
+    text-align: center;
+}
+.seasontitle {
+    padding-left: 70px;
+}
+
 table {
     border-collapse: collapse;
+    margin: 20px;
+    font-weight: bold;
 }
 
 table, th, td, tr {
     border-width: medium;
+    padding: 10;
+    border: 3px solid black;
+    }
 
-}
-
-.episode-no{     /* target class */
+.episode-no {     /* target class */
     text-align: center;
 }
+
+.titlelabel {
+    padding-left: 35px
+}
+
 
 th {
     background-color: blue;
     color: white;
 }
+
